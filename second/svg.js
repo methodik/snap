@@ -53,8 +53,10 @@ groups.paper = p;
 groups.next = function () {
   var active = this.getActive();
   var nextGroup = this.getNext();
-  
-  this.jump();
+
+  if ( nextGroup.pos != 0 ) {
+    this.jump();  
+  }
   
   active.el.attr('class', '');
   nextGroup.el.attr('class', 'active');
@@ -76,8 +78,6 @@ groups.jump = function() {
       circle.remove();
     });
   });
-
-  console.log(this.paper);
 }
 
 groups.getNext = function () {
