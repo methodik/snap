@@ -1,1 +1,0 @@
-function jump(e){var t=p.select(".active"),n=parseInt(t.select("circle").attr("cx"));p.add(circSm(n+42,48));p.add(circSm(n+53,48));var r=p.selectAll(".small");r[1].attr({opacity:".5"});r[0].animate({opacity:0},300);r[1].animate({opacity:1},300,function(){r.forEach(function(e){e.remove()})})};

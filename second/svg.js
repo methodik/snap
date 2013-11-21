@@ -32,8 +32,6 @@ function createText(x, y, number) {
   });
 }
 
-
-
 // make groups
 var groups = [];
 var dist = 98;
@@ -44,9 +42,7 @@ for ( var i = 0; i < 4; i++ ) {
 
   if ( groups.length > 0 ) {
     offset = parseInt(groups[i - 1].select('circle').attr('cx')) + dist;
-  } else {
-    offset = 34;
-  }
+  } 
   groups.push(p.g(circLg(offset, 48), createText(offset - 4, 54, i + 1)));
 }
 

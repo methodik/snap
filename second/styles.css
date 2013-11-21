@@ -1,7 +1,22 @@
+/* ==============
+  FONTS -------
+============= */
+
+@font-face {
+  font-family: 'lobster';
+  src: url('./fonts/lobster-webfont.eot');
+  src: url('./fonts/lobster-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/lobster-webfont.woff') format('woff'),
+       url('./fonts/lobster-webfont.ttf') format('truetype'),
+       url('./fonts/lobster-webfont.svg#lobster_1.4regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body { background: #ea7373; }
 
 div.progress-indicator {
-  width: 360px; height: 100px;
+  width: 500px; height: 100px;
   margin: 2.5rem auto;
 }
 
@@ -22,10 +37,6 @@ text {
 
 circle {
   cursor: pointer;
-}
-
-.active circle:first-of-type {
-  /*fill: #fff;*/
 }
 
 .active text {
