@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codrops Example</title>
+</head>
+<body>
+  <span data-icon-name="navicon"></span>
+  <script src="snap.js"></script>
+  <script>
+    navicon : {
+      url : 'navicon.svg'
+      animation : [
+        {
+          el : 'line:nth-child(1)',
+          animProperties : {
+            from : { '{"y2" : "0"}', animAfter : '{"stroke" : "#bada55"}' },
+            to : { '"y2" : "90"', animAfter : '{"stroke" : "#777"}' }
+          }
+        }
+      ]
+    }
+  </script>
+</body>
+</html>

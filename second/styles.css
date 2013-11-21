@@ -1,0 +1,33 @@
+body { background: #ea7373; }
+
+div.progress-indicator {
+  width: 360px; height: 100px;
+  margin: 2.5rem auto;
+}
+
+section.window {
+  width: 500px; height: 500px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* ============
+  SVG -------
+============ */
+
+text {
+  pointer-events: none;
+}
+
+circle {
+  cursor: pointer;
+}
+
+.active circle:first-of-type {
+  /*fill: #fff;*/
+}
+
+.active text {
+  fill: #404041;
+}
